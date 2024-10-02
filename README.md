@@ -14,7 +14,7 @@ A React web application that displays a list of movies and allows users to add s
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/cine-spotlight.git
+    git clone https://github.com/your-username/movie-magic.git
     cd cine-spotlight
     ```
 
@@ -34,7 +34,6 @@ A React web application that displays a list of movies and allows users to add s
 
 - `public/`: Contains static files such as `index.html`.
 - `src/`: Contains the main source code for the application.
-  - `components/`: Contains the React components.
   - `App.js`: The main component that ties everything together.
   - `index.js`: The entry point of the application.
 
@@ -49,11 +48,9 @@ A React web application that displays a list of movies and allows users to add s
 ### MovieList.js
 - Fetches and displays a list of movies.
 
-### MovieItem.js
+### Moviedata.js
 - Represents an individual movie item with options to add/remove stars, add to favorites, and add to cart.
 
-### Cart.js
-- Displays the movies that have been added to the cart.
 
 ## Usage
 
