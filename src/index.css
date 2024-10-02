@@ -144,11 +144,47 @@ body {
   border-style: solid;
   margin-right: 5px;
 }
+.titlbar
+{
+  font-size: 20px;  
+    font-weight: bold;  
+    color: #0000FF;  
+    text-decoration: none;  
+    padding: 20px;  
+    display: inline-block;  
+    font-family: Arial, sans-serif;  
 
+}
 .navbar
 {
   width: 100%;
-  height: 72px;
-  background-color: red;
+  height: 70px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
 }
+
+
+.cartContainer
+{
+  position: relative;
+  cursor: pointer;
+}
+
+.cartIcon
+{
+  height: 48px;
+  margin-right: 20px;
+}
+
+.cartCount {
+  background-color: orange;
+  border-radius: 50%;
+  padding: 4px 8px;
+  position: absolute;
+  right: 10px;
+  top: -5px;
+  font-size: 12px;
+}
+
 

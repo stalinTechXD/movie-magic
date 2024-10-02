@@ -6,10 +6,10 @@ class Navbar extends React.Component {
         return(       
             <>
              <div className="navbar">
-                <div>Title</div>
-                <div>
-                    <img alt = "cart icon" /> 
-                    <span> 0</span>
+                <div className="titlbar">Movie Magic</div>
+                <div className="cartContainer">
+                    <img className = "cartIcon" src="https://cdn-icons-png.flaticon.com/128/2121/2121815.png" alt = "carticon" /> 
+                    <span className="cartCount"> {this.props.cartCount}</span>
                 </div>
              </div>
             </>

@@ -5,7 +5,9 @@ class MovieCard extends React.Component {
 
     render() {
         const {title  , plot , price , rating , stars , fav , addCart } = this.props.movies;
+        console.log(this.props.movies);
         return (
+
             <div className="main">
                 <div className ="movie-card">
                     <div className="left">
@@ -36,7 +38,10 @@ class MovieCard extends React.Component {
                                 <span className="startCount">{stars}</span>
                             </div>
                             <div className="favourite-btn-bg"> 
-                               { fav ? <button className="favourite-btn" onClick = {() => { this.props.favourite(this.props.movies)}}  >
+                               { 
+                               fav ? <button className="favourite-btn" onClick = {() => {
+                                console.log(this.props);
+                                this.props.favourite(this.props.movies)}}  >
                                     Favorite
                                 </button> : <button className="favourite-btn" onClick = {() => { this.props.favourite(this.props.movies)}} >
                                    Un-Favorite
@@ -44,7 +49,9 @@ class MovieCard extends React.Component {
                                
                             </div>
                             <div className="cart-btn-bg">
-                               { addCart ? <button className="cart-btn" onClick = { () => { this.props.handleCart(this.props.movies)}}>
+                               { addCart ? <button className="cart-btn" onClick = { () => { 
+                                console.log(this.props);
+                                this.props.handleCart(this.props.movies)}}>
                                       Remove From Cart
                                 </button> : <button className="cart-btn" onClick = { () => { this.props.handleCart(this.props.movies)}}>
                                 Add to Cart
