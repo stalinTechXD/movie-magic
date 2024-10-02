@@ -5,7 +5,7 @@ class Navbar extends React.Component {
     render () {
         return(       
             <>
-             <div>
+             <div className="navbar">
                 <div>Title</div>
                 <div>
                     <img alt = "cart icon" /> 
